@@ -1,25 +1,19 @@
 /*
- * 
- * 
- * 
+ * General A* algorithm
  */
-package A.Star.Search;
+package AStarSearch;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- *
- * @author Yoitsu
- */
-public class AStarSearch {
+public final class AStarSearch {
     
     
     List<NodoInterfaz> abiertos;
     List<NodoInterfaz> cerrados;
     
-    AStarSearch(NodoInterfaz origen, NodoInterfaz destino)
+    public AStarSearch(NodoInterfaz origen, NodoInterfaz destino)
     {
         abiertos = new ArrayList();
         cerrados = new ArrayList();
@@ -49,8 +43,10 @@ public class AStarSearch {
            // escribir();
             
         }
+
         
         escribirCamino(nodoActual);
+        System.out.println("");
         System.out.println("Nodos Explorados: "+nodosExplorados);
         
         
@@ -106,7 +102,7 @@ public class AStarSearch {
         }
     }
     
-        void escribir()
+    void escribir()
     {
         System.out.println("");
         System.out.print("Lista de abiertos: ");
@@ -117,7 +113,7 @@ public class AStarSearch {
         }
         System.out.println("");
         
-        /*
+        
         System.out.print("Lista de cerrados: ");
         for(NodoInterfaz n : cerrados)
         {
@@ -125,7 +121,7 @@ public class AStarSearch {
           n.escribirNodo();
         }
         System.out.println("");
-        */
+        
     }
     
 }
