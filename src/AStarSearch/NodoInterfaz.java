@@ -6,8 +6,6 @@ package AStarSearch;
 import java.util.List;
 
 public interface NodoInterfaz {
-
-    //these 3 are the only methods actually called by A.Star.Search so they are indispensable
     
     //compares states, needed to avoid repetitions
     boolean esIgual(NodoInterfaz b);
