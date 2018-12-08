@@ -137,7 +137,9 @@ public class NPuzzle extends NodoAbstracto{
     }
 
     @Override
-    //Evaluation is given by the amount of pices outside of their position
+    //Evaluation is given by the sum of the distances of every tile to the position it should be in, this evaulation is weighted by 
+    //"precision", it should be noted that a precision of 1 will achieve the best possible result, any number above it wont necesarily
+    //do the same but will reach a solution in a significantly faster time, especially in 15 puzzle or bigger puzzle games.
     public void evaluar() {
         
         int descolocados = 0;
