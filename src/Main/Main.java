@@ -18,7 +18,7 @@ public class Main {
     
     //N-puzzle, arguments are 1- a matrix of each value of a state 2- the precision of heuristics, 
     //high values can be faster, but will be less precise, for 8-puzzle 1 is fine, for 15-puzzle or
-    //bigger 3 or more is adviced
+    //bigger 3 or more is advised
     
     // 8-Puzzle
     static NodoInterfaz origen8Puzzle = (NodoInterfaz) new NPuzzle( new int[][] {{3,0,7},{2,8,1},{6,4,5}},1);
